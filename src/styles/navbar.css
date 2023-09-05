@@ -1,23 +1,7 @@
 .navbar {
     display: flex;
     width: 100%;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     padding: 0.25em 1em;
-    /* backdrop-filter: blur(var(--blur-val)); */
-}
-
-.navbar__logo {
-    max-width: 3em;
-}
-
-.navbar__title {
-    color: var(--app-sage);
-    font-size: calc(32em / 16);
-}
-
-/* Center title without a third element showing on the DOM */
-.navbar__placeholder {
-    opacity: 0;
-    flex: 0.15 1;
 }
