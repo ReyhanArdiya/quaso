@@ -1,9 +1,16 @@
 .h1 {
     font-size: calc(36em / 16);
     font-weight: 700;
+    line-height: 1.2em;
 }
 
 .h2 {
     font-size: calc(28em / 16);
     font-weight: 500;
+    line-height: 1.2em;
+}
+
+.body {
+    font-size: calc(18em / 16);
+    line-height: 1.4em;
 }

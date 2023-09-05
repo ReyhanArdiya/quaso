@@ -24,28 +24,55 @@
         <link rel="stylesheet" href="styles/reset.css" />
         <link rel="stylesheet" href="styles/index.css" />
         <link rel="stylesheet" href="styles/navbar.css" />
+        <link rel="stylesheet" href="styles/hero.css" />
         <link rel="stylesheet" href="styles/typography.css" />
     </head>
 
     <body>
-        <header>
-            <nav class="navbar">
-                <img
-                    class="navbar__logo"
-                    src="assets/icons/quaso-icon.svg"
-                    alt="quaso-icon"
-                    title="quaso-icon"
-                />
-                <h2 class="navbar__title">Quaso</h2>
-                <p class="navbar__placeholder">placeholder</p>
-            </nav>
-        </header>
+        <div class="app">
+            <header class="body-header">
+                <nav class="navbar">
+                    <img
+                        class="navbar__logo"
+                        src="assets/icons/quaso-icon.svg"
+                        alt="quaso-icon"
+                        title="quaso-icon"
+                    />
+                    <h2 class="navbar__title">Quaso</h2>
+                    <p class="navbar__placeholder">p</p>
+                </nav>
+            </header>
 
-        <main></main>
+            <main>
+                <section class="hero">
+                    <img
+                        class="hero__image"
+                        src="assets/images/croissant.png"
+                        alt="hero-image"
+                        title="hero-image"
+                    />
 
-        <div class="block"></div>
+                    <div class="hero__magic-words">
+                        <h1 class="hero__heading">
+                            <strong class="hero__heading-hook"
+                                >Scrumptiousness</strong
+                            >,
+                            <br />
+                            at your fingertips
+                        </h1>
+                        <p class="body hero__text">
+                            Browse through <strong>hundreds</strong> of our
+                            appetizing recipes
+                            <strong>from multiple countries</strong> to sate your
+                            inner chef
+                        </p>
+                    </div>
+                </section>
+            </main>
 
-        <footer></footer>
+            <footer></footer>
+        </div>
+
         <script type="module" src="scripts/"></script>
     </body>
 </html>

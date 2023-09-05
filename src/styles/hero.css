@@ -1,0 +1,44 @@
+.hero {
+    min-height: 550px;
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+
+.hero__image {
+    width: 20em;
+}
+
+.hero__magic-words {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    gap: 1em;
+}
+
+.hero__heading {
+    font-size: calc(40em / 16);
+    font-weight: 700;
+    text-align: center;
+}
+
+.hero__heading-hook {
+    color: var(--app-sage);
+}
+
+.hero__text {
+    text-align: center;
+    width: 90%;
+    max-width: 440px;
+}
+
+.hero__text strong {
+    color: var(--app-sage);
+    font-weight: 700;
+}

@@ -4,10 +4,16 @@
     --app-brown: #a9907e;
     --app-white: #fff4f4;
     --app-black: #332c39;
+    --blur-val: 10px;
     font-family: "Josefin Sans", sans-serif;
 }
 
-body {
-    background-color: var(--app-white);
+.app {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 1.5em;
+    background-color: hsla(0, 100%, 98%, 0.5);
     color: var(--app-black);
+    backdrop-filter: blur(var(--blur-val));
 }
