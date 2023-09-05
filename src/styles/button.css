@@ -1,0 +1,12 @@
+.btn {
+    text-decoration: none;
+    color: var(--app-white);
+    background-color: var(--app-black);
+    padding: 0.8em 1em;
+    font-size: calc(16em / 16);
+    font-weight: 400;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    /* border-radius: 0.2em; */
+}

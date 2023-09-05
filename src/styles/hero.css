@@ -44,6 +44,14 @@
     font-weight: 700;
 }
 
+.hero .line {
+    width: 12em;
+}
+
+.hero .btn {
+    font-size: calc(24em / 16);
+}
+
 @media screen and (min-width: 1024px) {
     .hero {
         min-height: 400px;
@@ -69,5 +77,10 @@
 
     .hero__text {
         text-align: left;
+    }
+
+    .hero .line {
+        /* width: 70%; */
+        margin: 0;
     }
 }

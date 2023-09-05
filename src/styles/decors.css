@@ -1,0 +1,22 @@
+.decor {
+    position: absolute;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.decor:first-of-type {
+    top: -430px;
+    right: -80px;
+    transform: translateZ(-20px);
+    width: 300px;
+}
+.decor:nth-of-type(2) {
+    top: 200px;
+    left: -120px;
+    transform: translateZ(-40px) rotate(30deg);
+    width: 140px;
+}
+
+.line {
+    border: 1px solid var(--app-black);
+}

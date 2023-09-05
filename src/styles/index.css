@@ -23,23 +23,3 @@ body {
     color: var(--app-black);
     backdrop-filter: blur(var(--blur-val));
 }
-
-.decor {
-    position: absolute;
-    width: 100%;
-    object-fit: cover;
-    z-index: -1;
-}
-
-.decor:first-of-type {
-    top: -600px;
-    right: -180px;
-    transform: translateZ(-20px);
-    width: 60%;
-}
-.decor:nth-of-type(2) {
-    top: 200px;
-    left: -120px;
-    transform: translateZ(-40px) rotate(30deg);
-    width: 20%;
-}
