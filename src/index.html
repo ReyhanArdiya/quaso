@@ -106,26 +106,25 @@
                 </div>
 
                 <section class="recipes__list">
-                    <section class="recipes__results">
-                        <template id="recipe-card-template">
-                            <article class="recipe-card">
-                                <img
-                                    src="assets/images/placeholder-food.jpg"
-                                    alt=""
-                                    class="recipe-card__thumb"
-                                />
-                                <section class="recipe-card__info">
-                                    <h3 class="h3 recipe-card__title">Croissant</h3>
-                                    <small class="small recipe-card__category"
-                                        >Category</small
-                                    >
-                                    <a href="" class="btn recipe-card__btn"
-                                        >Watch Video</a
-                                    >
-                                </section>
-                            </article>
-                        </template>
-                    </section>
+                    <template id="recipe-card-template">
+                        <article class="recipe-card">
+                            <img
+                                src="assets/images/placeholder-food.jpg"
+                                alt=""
+                                class="recipe-card__thumb"
+                            />
+                            <section class="recipe-card__info">
+                                <h3 class="h3 recipe-card__title">Croissant</h3>
+                                <small class="small recipe-card__category"
+                                    >Category</small
+                                >
+                                <a href="" class="btn recipe-card__btn"
+                                    >Watch Video</a
+                                >
+                            </section>
+                        </article>
+                    </template>
+                    <section class="recipes__results"></section>
 
                     <hr class="line" />
 
@@ -137,7 +136,6 @@
                             Recipes
                         </h2>
 
-                        <!-- TODO just get 3 cards -->
                         <template id="recipe-recommend-template">
                             <article class="recipe-recommends-card">
                                 <img
@@ -206,7 +204,7 @@
 
         <div class="body-bg"></div>
 
-        <script defer type="module" src="scripts/load-recommends.js"></script>
-        <script defer type="module" src="scripts/index.js"></script>
+        <script defer src="scripts/fetch-recipes.js"></script>
+        <script defer src="scripts/load-recommends.js"></script>
     </body>
 </html>

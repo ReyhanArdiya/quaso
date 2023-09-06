@@ -61,7 +61,7 @@
     display: flex;
     position: relative;
     align-items: center;
-    height: 19em;
+    height: 21em;
     width: 12em;
 }
 
@@ -88,6 +88,17 @@
     padding: 0 0.5em 1em 0.5em;
     gap: 0.2em;
     border-radius: var(--border-radius);
+}
+
+/* Add elipsis */
+.recipe-card__title {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-clamp: 2;
+    -webkit-line-clamp: 2;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    text-align: center;
 }
 
 .recipe-card__category {
