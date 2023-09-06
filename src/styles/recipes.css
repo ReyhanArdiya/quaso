@@ -1,0 +1,30 @@
+.recipes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+/* Searchbar */
+.searchbar {
+    display: flex;
+    justify-content: start;
+    width: max-content;
+    padding: 0.5em;
+    gap: 1em;
+    border: 1px solid var(--app-grey);
+    border-radius: var(--border-radius);
+}
+
+.searchbar__label {
+    width: 2em;
+    height: 2em;
+}
+
+.searchbar__input {
+    border: none;
+    outline: none;
+    font-family: inherit;
+    font-weight: 400;
+    font-size: 1.25em;
+}

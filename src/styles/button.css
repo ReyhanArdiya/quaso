@@ -8,5 +8,5 @@
     align-items: center;
     display: flex;
     justify-content: center;
-    /* border-radius: 0.2em; */
+    border-radius: var(--border-radius);
 }

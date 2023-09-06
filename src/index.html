@@ -28,6 +28,7 @@
         <link rel="stylesheet" href="styles/logo.css" />
         <link rel="stylesheet" href="styles/navbar.css" />
         <link rel="stylesheet" href="styles/hero.css" />
+        <link rel="stylesheet" href="styles/recipes.css" />
         <link rel="stylesheet" href="styles/typography.css" />
     </head>
 
@@ -85,9 +86,38 @@
                             inner chef
                         </p>
                         <hr class="line" />
-                        <a href="#search" class="btn"
-                            >Browse Recipes</a
+                        <a href="#search" class="btn">Browse Recipes</a>
                     </div>
+                </section>
+
+                <section class="recipes">
+                    <div id="searchbar" class="searchbar">
+                        <label for="searchbar__input" class="searchbar__label">
+                            <img
+                                src="assets/icons/search.svg"
+                                alt="search"
+                                title="search"
+                            />
+                        </label>
+                        <input
+                            type="text"
+                            name="searchbar__input"
+                            id="searchbar__input"
+                            class="searchbar__input"
+                            placeholder="Search recipes..."
+                        />
+                    </div>
+
+                    <section class="recipes__list">
+                        <template id="recipe-card">
+                            <img src="" alt="" />
+                            <h3></h3>
+                            <small></small>
+                            <a href="" class="btn"></a>
+                        </template>
+
+                        <aside class="recipes__recommends"></aside>
+                    </section>
                 </section>
             </main>
 
@@ -107,6 +137,6 @@
             title="decor"
         />
 
-        <script type="module" src="scripts/"></script>
+        <!-- <script type="module" src="scripts/"></script> -->
     </body>
 </html>
