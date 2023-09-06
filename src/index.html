@@ -12,14 +12,202 @@
         />
         <meta name="keywords" content="HTML, CSS, JavaScript" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" href="assets/icons/quaso-icon.svg" type="image/svg+xml" />
 
-        <link rel="stylesheet" href="styles/" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap"
+            rel="stylesheet"
+        />
+
+        <link rel="stylesheet" href="styles/reset.css" />
+        <link rel="stylesheet" href="styles/index.css" />
+        <link rel="stylesheet" href="styles/typography.css" />
+        <link rel="stylesheet" href="styles/button.css" />
+        <link rel="stylesheet" href="styles/decors.css" />
+        <link rel="stylesheet" href="styles/logo.css" />
+        <link rel="stylesheet" href="styles/navbar.css" />
+        <link rel="stylesheet" href="styles/hero.css" />
+        <link rel="stylesheet" href="styles/recipes.css" />
+        <link rel="stylesheet" href="styles/footer.css" />
     </head>
 
     <body>
-        <header></header>
-        <main></main>
-        <footer></footer>
-        <script type="module" src="scripts/"></script>
+        <div class="app">
+            <header class="body-header">
+                <nav class="navbar">
+                    <a href="." class="navbar__icon">
+                        <img
+                            src="assets/icons/settings.svg"
+                            alt="settings"
+                            title="settings"
+                        />
+                    </a>
+                    <a class="logo" href=".">
+                        <img
+                            class="logo__icon"
+                            src="assets/icons/quaso-icon.svg"
+                            alt="quaso-icon"
+                            title="quaso-icon"
+                        />
+                        <h2 class="logo__text">Quaso</h2>
+                    </a>
+                    <a href="#recipes" class="navbar__icon">
+                        <img
+                            src="assets/icons/search.svg"
+                            alt="search"
+                            title="search"
+                        />
+                    </a>
+                </nav>
+            </header>
+
+            <section class="hero">
+                <img
+                    class="hero__image"
+                    src="assets/images/croissant.png"
+                    alt="hero-image"
+                    title="hero-image"
+                />
+
+                <div class="hero__magic-words">
+                    <h1 class="hero__heading">
+                        <strong class="hero__heading-hook">Scrumptiousness</strong>,
+                        <br />
+                        at your fingertips
+                    </h1>
+                    <p class="body hero__text">
+                        Browse through <strong>hundreds</strong> of our appetizing
+                        recipes <strong>from multiple countries</strong> to sate your
+                        inner chef
+                    </p>
+                    <hr class="line" />
+                    <a href="#recipes" class="btn">Browse Recipes</a>
+                </div>
+            </section>
+
+            <main id="#recipes" class="recipes">
+                <div id="searchbar" class="searchbar">
+                    <label for="searchbar__input" class="searchbar__label">
+                        <img
+                            src="assets/icons/search.svg"
+                            alt="search"
+                            title="search"
+                        />
+                    </label>
+                    <input
+                        type="text"
+                        name="searchbar__input"
+                        id="searchbar__input"
+                        class="searchbar__input"
+                        placeholder="Search recipes..."
+                    />
+                </div>
+
+                <section class="recipes__list">
+                    <template id="recipe-card-template">
+                        <article class="recipe-card">
+                            <img
+                                src="assets/images/placeholder-food.jpg"
+                                alt=""
+                                class="recipe-card__thumb"
+                            />
+                            <section class="recipe-card__info">
+                                <h3 class="h3 recipe-card__title">Croissant</h3>
+                                <small class="small recipe-card__category"
+                                    >Category</small
+                                >
+                                <a href="" class="btn recipe-card__btn"
+                                    >Watch Video</a
+                                >
+                            </section>
+                        </article>
+                    </template>
+                    <template id="loading-template">
+                        <p class="body">Loading...</p>
+                    </template>
+                    <section class="recipes__results"></section>
+
+                    <hr class="line" />
+
+                    <aside class="recipe-recommends">
+                        <h2 class="h2 recipe-recommends__heading">
+                            <strong class="recipe-recommends__heading-hook"
+                                >Recommended</strong
+                            >
+                            Recipes
+                        </h2>
+
+                        <template id="recipe-recommend-template">
+                            <article class="recipe-recommends-card">
+                                <img
+                                    src="assets/images/placeholder-food.jpg"
+                                    alt=""
+                                    class="recipe-recommends-card__thumb"
+                                />
+                                <section class="recipe-recommends-card__info">
+                                    <h3 class="h3 recipe-recommends-card__title">
+                                        <a href="" target="_blank">Title</a>
+                                    </h3>
+                                    <small
+                                        class="small recipe-recommends-card__category"
+                                        >Category</small
+                                    >
+                                </section>
+                            </article>
+                        </template>
+                    </aside>
+                </section>
+            </main>
+
+            <footer class="footer">
+                <a class="logo" href=".">
+                    <img
+                        class="logo__icon"
+                        src="assets/icons/quaso-icon.svg"
+                        alt="quaso-icon"
+                        title="quaso-icon"
+                    />
+                    <h2 class="logo__text">Quaso</h2>
+                </a>
+
+                <section class="socials">
+                    <a href="https://github.com/ReyhanArdiya/quaso" target="_blank">
+                        <img
+                            class="socials__logo"
+                            src="assets/icons/socials-github.svg"
+                            alt="github"
+                            title="github"
+                        />
+                    </a>
+                    <a href="https://github.com/ReyhanArdiya/quaso" target="_blank">
+                        <img
+                            class="socials__logo"
+                            src="assets/icons/socials-twitter.svg"
+                            alt="twitter"
+                            title="twitter"
+                        />
+                    </a>
+                    <a href="https://github.com/ReyhanArdiya/quaso" target="_blank">
+                        <img
+                            class="socials__logo"
+                            src="assets/icons/socials-youtube.svg"
+                            alt="yousocials-youtube.svg"
+                            title="yousocials-youtube.svg"
+                        />
+                    </a>
+                </section>
+
+                <small class="small">
+                    &copy; 2023 Quaso. All rights reserved.
+                </small>
+            </footer>
+        </div>
+
+        <div class="body-bg"></div>
+
+        <script defer src="scripts/fetch-recipes.js"></script>
+        <script defer src="scripts/load-recommends.js"></script>
     </body>
 </html>

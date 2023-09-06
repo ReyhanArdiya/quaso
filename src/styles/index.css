@@ -1,0 +1,33 @@
+:root {
+    --app-sage: #aec3ae;
+    --app-beige: #f3deba;
+    --app-brown: #a9907e;
+    --app-white: #fff4f4;
+    --app-black: #332c39;
+    --app-grey: rgba(214, 214, 214, 0.5);
+    --blur-val: 10px;
+    --border-radius: 4px;
+    --drop-shadow: drop-shadow(0 5px 0.25em rgb(51, 44, 57, 0.25))
+        drop-shadow(0 2.5px 0.25em rgb(51, 44, 57, 0.5));
+    font-family: "Josefin Sans", sans-serif;
+}
+
+/* * {
+    outline: 1px solid green;
+} */
+
+body {
+    perspective: 100px;
+    overflow-x: hidden;
+}
+
+.app {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    gap: 1.5em;
+    background-color: hsla(0, 100%, 98%, 0.5);
+    color: var(--app-black);
+    backdrop-filter: blur(var(--blur-val));
+}

@@ -1,0 +1,18 @@
+.btn {
+    text-decoration: none;
+    color: var(--app-white);
+    background-color: var(--app-black);
+    padding: 0.8em 1em;
+    font-size: calc(16em / 16);
+    font-weight: 400;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    border-radius: var(--border-radius);
+    transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+}
+
+.btn:hover {
+    background-color: var(--app-sage);
+    color: var(--app-black);
+}
