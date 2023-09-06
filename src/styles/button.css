@@ -9,4 +9,10 @@
     display: flex;
     justify-content: center;
     border-radius: var(--border-radius);
+    transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+}
+
+.btn:hover {
+    background-color: var(--app-sage);
+    color: var(--app-black);
 }

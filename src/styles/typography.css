@@ -10,7 +10,19 @@
     line-height: 1.2em;
 }
 
+.h3 {
+    font-size: calc(24em / 16);
+    font-weight: 500;
+    line-height: 1.2em;
+}
+
 .body {
     font-size: calc(18em / 16);
     line-height: 1.4em;
+}
+
+.small {
+    font-size: calc(16em / 16);
+    line-height: 1.4em;
+    font-weight: 300;
 }

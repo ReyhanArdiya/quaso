@@ -4,9 +4,11 @@
     --app-brown: #a9907e;
     --app-white: #fff4f4;
     --app-black: #332c39;
-    --app-grey: #d5d5d5;
+    --app-grey: rgba(214, 214, 214, 0.5);
     --blur-val: 10px;
     --border-radius: 4px;
+    --drop-shadow: drop-shadow(0 5px 0.25em rgb(51, 44, 57, 0.25))
+        drop-shadow(0 2.5px 0.25em rgb(51, 44, 57, 0.5));
     font-family: "Josefin Sans", sans-serif;
 }
 
