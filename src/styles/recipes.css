@@ -128,6 +128,9 @@
     flex-direction: row;
     gap: 1em;
     width: 100%;
+    border-radius: var(--border-radius);
+    background-color: var(--app-grey);
+    padding: 1em;
 }
 
 .recipe-recommends-card__info {
@@ -143,7 +146,7 @@
 
 .recipe-recommends-card__title a,
 .recipe-recommends-card__title a:hover {
-    color: var(--app-sage);
+    color: var(--app-brown);
 }
 
 @media screen and (min-width: 1024px) {
@@ -157,7 +160,7 @@
 
     .recipes__list .line {
         width: 0;
-        height: 20em;
+        height: 24em;
     }
 
     .recipes__results {
