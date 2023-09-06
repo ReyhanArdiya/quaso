@@ -20,16 +20,23 @@ const createRecipesCard = ({ imgSrc, title, category, videoUrl }) => {
 
 const fetchRecipes = async q => {
     const recipesContainer = document.querySelector(".recipes__results");
+    const loading = document
+        .getElementById("loading-template")
+        .content.firstElementChild.cloneNode(true);
+
     recipesContainer.innerHTML = "";
+    recipesContainer.appendChild(loading);
+
     try {
         const res = await fetch(
             `https://www.themealdb.com/api/json/v1/1/search.php?s=${q}`
         );
         const data = await res.json();
+        recipesContainer.innerHTML = "";
 
         data.meals.forEach(meal => {
             const recipeCard = createRecipesCard({
-                imgSrc: meal.strMealThumb,
+                imgSrc: `${meal.strMealThumb}/preview`,
                 title: meal.strMeal,
                 category: meal.strCategory,
                 videoUrl: meal.strYoutube
