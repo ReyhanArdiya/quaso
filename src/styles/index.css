@@ -12,6 +12,10 @@
     font-family: "Josefin Sans", sans-serif;
 }
 
+/* * {
+    outline: 1px solid green;
+} */
+
 body {
     perspective: 100px;
     overflow-x: hidden;
