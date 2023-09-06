@@ -52,7 +52,7 @@
                         />
                         <h2 class="logo__text">Quaso</h2>
                     </a>
-                    <a href="#search" class="navbar__icon">
+                    <a href="#recipes" class="navbar__icon">
                         <img
                             src="assets/icons/search.svg"
                             alt="search"
@@ -82,11 +82,11 @@
                         inner chef
                     </p>
                     <hr class="line" />
-                    <a href="#search" class="btn">Browse Recipes</a>
+                    <a href="#recipes" class="btn">Browse Recipes</a>
                 </div>
             </section>
 
-            <main class="recipes">
+            <main id="#recipes" class="recipes">
                 <div id="searchbar" class="searchbar">
                     <label for="searchbar__input" class="searchbar__label">
                         <img
@@ -106,60 +106,24 @@
 
                 <section class="recipes__list">
                     <section class="recipes__results">
-                        <!-- TODO uncomment template -->
-                        <!-- <template id="recipe-card-template"> -->
-                        <article class="recipe-card">
-                            <img
-                                src="assets/images/placeholder-food.jpg"
-                                alt=""
-                                class="recipe-card__thumb"
-                            />
-                            <section class="recipe-card__info">
-                                <h3 class="h3 recipe-card__title">Croissant</h3>
-                                <small class="small recipe-card__category"
-                                    >Category</small
-                                >
-                                <a href="" class="btn recipe-card__btn"
-                                    >Watch Video</a
-                                >
-                            </section>
-                        </article>
-                        <article class="recipe-card">
-                            <img
-                                src="assets/images/placeholder-food.jpg"
-                                alt=""
-                                class="recipe-card__thumb"
-                            />
-                            <section class="recipe-card__info">
-                                <h3 class="h3 recipe-card__title">Croissant</h3>
-                                <small class="small recipe-card__category"
-                                    >Category</small
-                                >
-                                <a href="" class="btn recipe-card__btn"
-                                    >Watch Video</a
-                                >
-                            </section>
-                        </article>
-                        <article class="recipe-card">
-                            <img
-                                src="assets/images/placeholder-food.jpg"
-                                alt=""
-                                class="recipe-card__thumb"
-                            />
-                            <section class="recipe-card__info">
-                                <h3 class="h3 recipe-card__title">Croissant</h3>
-                                <small class="small recipe-card__category"
-                                    >Category</small
-                                >
-                                <a
-                                    href=""
-                                    target="_blank"
-                                    class="btn recipe-card__btn"
-                                    >Watch Video</a
-                                >
-                            </section>
-                        </article>
-                        <!-- </template> -->
+                        <template id="recipe-card-template">
+                            <article class="recipe-card">
+                                <img
+                                    src="assets/images/placeholder-food.jpg"
+                                    alt=""
+                                    class="recipe-card__thumb"
+                                />
+                                <section class="recipe-card__info">
+                                    <h3 class="h3 recipe-card__title">Croissant</h3>
+                                    <small class="small recipe-card__category"
+                                        >Category</small
+                                    >
+                                    <a href="" class="btn recipe-card__btn"
+                                        >Watch Video</a
+                                    >
+                                </section>
+                            </article>
+                        </template>
                     </section>
 
                     <hr class="line" />
@@ -171,54 +135,26 @@
                             >
                             Recipes
                         </h2>
-                        <!-- TODO uncomment template -->
-                        <!-- <template id="recipe-recommend-template"> -->
-                        <article class="recipe-recommends-card">
-                            <img
-                                src="assets/images/placeholder-food.jpg"
-                                alt=""
-                                class="recipe-recommends-card__thumb"
-                            />
-                            <section class="recipe-recommends-card__info">
-                                <h3 class="h3 recipe-recommends-card__title">
-                                    <a href="" target="_blank"> Croissant</a>
-                                </h3>
-                                <small class="small recipe-recommends-card__category"
-                                    >Category</small
-                                >
-                            </section>
-                        </article>
-                        <article class="recipe-recommends-card">
-                            <img
-                                src="assets/images/placeholder-food.jpg"
-                                alt=""
-                                class="recipe-recommends-card__thumb"
-                            />
-                            <section class="recipe-recommends-card__info">
-                                <h3 class="h3 recipe-recommends-card__title">
-                                    <a href="" target="_blank"> Croissant</a>
-                                </h3>
-                                <small class="small recipe-recommends-card__category"
-                                    >Category</small
-                                >
-                            </section>
-                        </article>
-                        <article class="recipe-recommends-card">
-                            <img
-                                src="assets/images/placeholder-food.jpg"
-                                alt=""
-                                class="recipe-recommends-card__thumb"
-                            />
-                            <section class="recipe-recommends-card__info">
-                                <h3 class="h3 recipe-recommends-card__title">
-                                    <a href="" target="_blank"> Croissant</a>
-                                </h3>
-                                <small class="small recipe-recommends-card__category"
-                                    >Category</small
-                                >
-                            </section>
-                        </article>
-                        <!-- </template> -->
+
+                        <!-- TODO just get 3 cards -->
+                        <template id="recipe-recommend-template">
+                            <article class="recipe-recommends-card">
+                                <img
+                                    src="assets/images/placeholder-food.jpg"
+                                    alt=""
+                                    class="recipe-recommends-card__thumb"
+                                />
+                                <section class="recipe-recommends-card__info">
+                                    <h3 class="h3 recipe-recommends-card__title">
+                                        <a href="" target="_blank"> Croissant</a>
+                                    </h3>
+                                    <small
+                                        class="small recipe-recommends-card__category"
+                                        >Category</small
+                                    >
+                                </section>
+                            </article>
+                        </template>
                     </aside>
                 </section>
             </main>
@@ -226,7 +162,7 @@
             <footer></footer>
         </div>
 
-        <img
+        <!-- <img
             class="decor"
             src="assets/images/cucumber.png"
             alt="decor"
@@ -237,7 +173,7 @@
             src="assets/images/pepper-red.png"
             alt="decor"
             title="decor"
-        />
+        /> -->
 
         <!-- <script type="module" src="scripts/"></script> -->
     </body>

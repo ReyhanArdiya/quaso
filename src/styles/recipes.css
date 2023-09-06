@@ -42,10 +42,16 @@
 .recipes__results {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
+    justify-content: start;
     gap: 1em;
     width: 100%;
+    overflow-x: auto;
+    padding: 0 1em;
+}
+
+/* hide recipes results scrollbar */
+.recipes__results::-webkit-scrollbar {
+    display: none;
 }
 
 .recipe-card {
@@ -123,4 +129,32 @@
 
 .recipe-recommends-card__title:hover {
     color: var(--app-sage);
+}
+
+@media screen and (min-width: 1024px) {
+    .recipes {
+        padding: 0 1em;
+    }
+
+    .recipes__list {
+        flex-direction: row;
+    }
+
+    .recipes__list .line {
+        width: 0;
+        height: 20em;
+    }
+
+    .recipes__results {
+        flex: 1.5;
+    }
+
+    .recipe-recommends {
+        flex: 0.8;
+    }
+
+    .searchbar {
+        width: 45%;
+        align-self: flex-start;
+    }
 }
