@@ -1,0 +1,27 @@
+.footer {
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    flex-direction: column;
+    gap: 1.5em;
+}
+
+.footer .logo {
+    font-size: 0.7em;
+}
+
+.socials {
+    display: flex;
+    gap: 1.5em;
+    flex-direction: row;
+}
+
+.socials a {
+    text-decoration: none;
+}
+
+.socials__logo {
+    width: 3em;
+    height: 3em;
+    object-fit: cover;
+}
