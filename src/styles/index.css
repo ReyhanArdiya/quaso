@@ -31,3 +31,11 @@ body {
     color: var(--app-black);
     backdrop-filter: blur(var(--blur-val));
 }
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 1.5em;
+}

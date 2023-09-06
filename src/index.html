@@ -63,101 +63,101 @@
                 </nav>
             </header>
 
-            <section class="hero">
-                <img
-                    class="hero__image"
-                    src="assets/images/croissant.png"
-                    alt="hero-image"
-                    title="hero-image"
-                />
-
-                <div class="hero__magic-words">
-                    <h1 class="hero__heading">
-                        <strong class="hero__heading-hook">Scrumptiousness</strong>,
-                        <br />
-                        at your fingertips
-                    </h1>
-                    <p class="body hero__text">
-                        Browse through <strong>hundreds</strong> of our appetizing
-                        recipes <strong>from multiple countries</strong> to sate your
-                        inner chef
-                    </p>
-                    <hr class="line" />
-                    <a href="#recipes" class="btn">Browse Recipes</a>
-                </div>
-            </section>
-
-            <main id="#recipes" class="recipes">
-                <div id="searchbar" class="searchbar">
-                    <label for="searchbar__input" class="searchbar__label">
-                        <img
-                            src="assets/icons/search.svg"
-                            alt="search"
-                            title="search"
-                        />
-                    </label>
-                    <input
-                        type="text"
-                        name="searchbar__input"
-                        id="searchbar__input"
-                        class="searchbar__input"
-                        placeholder="Search recipes..."
+            <main class="main">
+                <section class="hero">
+                    <img
+                        class="hero__image"
+                        src="assets/images/croissant.png"
+                        alt="hero-image"
+                        title="hero-image"
                     />
-                </div>
+                    <div class="hero__magic-words">
+                        <h1 class="hero__heading">
+                            <strong class="hero__heading-hook"
+                                >Scrumptiousness</strong
+                            >,
+                            <br />
+                            at your fingertips
+                        </h1>
+                        <p class="body hero__text">
+                            Browse through <strong>hundreds</strong> of our
+                            appetizing recipes
+                            <strong>from multiple countries</strong> to sate your
+                            inner chef
+                        </p>
+                        <hr class="line" />
+                        <a href="#recipes" class="btn">Browse Recipes</a>
+                    </div>
+                </section>
 
-                <section class="recipes__list">
-                    <template id="recipe-card-template">
-                        <article class="recipe-card">
+                <section id="#recipes" class="recipes">
+                    <div id="searchbar" class="searchbar">
+                        <label for="searchbar__input" class="searchbar__label">
                             <img
-                                src="assets/images/placeholder-food.jpg"
-                                alt=""
-                                class="recipe-card__thumb"
+                                src="assets/icons/search.svg"
+                                alt="search"
+                                title="search"
                             />
-                            <section class="recipe-card__info">
-                                <h3 class="h3 recipe-card__title">Croissant</h3>
-                                <small class="small recipe-card__category"
-                                    >Category</small
-                                >
-                                <a href="" class="btn recipe-card__btn"
-                                    >Watch Video</a
-                                >
-                            </section>
-                        </article>
-                    </template>
-                    <template id="loading-template">
-                        <p class="body">Loading...</p>
-                    </template>
-                    <section class="recipes__results"></section>
-
-                    <hr class="line" />
-
-                    <aside class="recipe-recommends">
-                        <h2 class="h2 recipe-recommends__heading">
-                            <strong class="recipe-recommends__heading-hook"
-                                >Recommended</strong
-                            >
-                            Recipes
-                        </h2>
-
-                        <template id="recipe-recommend-template">
-                            <article class="recipe-recommends-card">
+                        </label>
+                        <input
+                            type="text"
+                            name="searchbar__input"
+                            id="searchbar__input"
+                            class="searchbar__input"
+                            placeholder="Search recipes..."
+                        />
+                    </div>
+                    <section class="recipes__list">
+                        <template id="recipe-card-template">
+                            <article class="recipe-card">
                                 <img
                                     src="assets/images/placeholder-food.jpg"
                                     alt=""
-                                    class="recipe-recommends-card__thumb"
+                                    class="recipe-card__thumb"
                                 />
-                                <section class="recipe-recommends-card__info">
-                                    <h3 class="h3 recipe-recommends-card__title">
-                                        <a href="" target="_blank">Title</a>
-                                    </h3>
-                                    <small
-                                        class="small recipe-recommends-card__category"
+                                <section class="recipe-card__info">
+                                    <h3 class="h3 recipe-card__title">Croissant</h3>
+                                    <small class="small recipe-card__category"
                                         >Category</small
+                                    >
+                                    <a href="" class="btn recipe-card__btn"
+                                        >Watch Video</a
                                     >
                                 </section>
                             </article>
                         </template>
-                    </aside>
+                        <template id="loading-template">
+                            <p class="body">Loading...</p>
+                        </template>
+                        <section class="recipes__results"></section>
+                        <hr class="line" />
+                        <aside class="recipe-recommends">
+                            <h2 class="h2 recipe-recommends__heading">
+                                <strong class="recipe-recommends__heading-hook"
+                                    >Recommended</strong
+                                >
+                                Recipes
+                            </h2>
+                            <template id="recipe-recommend-template">
+                                <article class="recipe-recommends-card">
+                                    <img
+                                        src="assets/images/placeholder-food.jpg"
+                                        alt=""
+                                        class="recipe-recommends-card__thumb"
+                                    />
+                                    <section class="recipe-recommends-card__info">
+                                        <h3 class="h3 recipe-recommends-card__title">
+                                            <a href="" target="_blank">Title</a>
+                                        </h3>
+                                        <small
+                                            class="small recipe-recommends-card__category"
+                                            >Category</small
+                                        >
+                                    </section>
+                                </article>
+                            </template>
+                        </aside>
+                    </section>
                 </section>
             </main>
 
