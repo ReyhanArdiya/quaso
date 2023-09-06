@@ -129,7 +129,8 @@
     object-fit: cover;
 }
 
-.recipe-recommends-card__title:hover {
+.recipe-recommends-card__title a,
+.recipe-recommends-card__title a:hover {
     color: var(--app-sage);
 }
 
