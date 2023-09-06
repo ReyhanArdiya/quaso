@@ -4,6 +4,7 @@
     /* justify-content: center; */
     flex-direction: column;
     gap: 1.5em;
+    margin-top: 10em;
 }
 
 .footer .logo {

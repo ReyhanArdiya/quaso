@@ -10,7 +10,7 @@
 .searchbar {
     display: flex;
     justify-content: start;
-    width: max-content;
+    width: 80%;
     padding: 0.5em;
     gap: 1em;
     border: 1px solid var(--app-grey);
@@ -30,6 +30,7 @@
     font-weight: 400;
     font-size: 1.25em;
     background: none;
+    width: 100%;
 }
 
 .recipes__list {
@@ -161,6 +162,7 @@
 
     .recipes__results {
         flex: 1.5;
+        margin-top: 2em;
     }
 
     .recipe-recommends {
@@ -169,6 +171,6 @@
 
     .searchbar {
         width: 45%;
-        align-self: flex-start;
+        align-self: center;
     }
 }
